@@ -1,0 +1,493 @@
+@font-face {
+    src: url("Fonts/Nunito.ttf");
+    font-family: 'Nunito';
+}
+
+@keyframes pulsateTeel {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #0fa,
+        0 0 45px #0fa,
+        0 0 55px #0fa,
+        0 0 70px #0fa,
+        0 0 80px #0fa;
+    }
+  }
+
+  @keyframes pulsatePurple {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px #bc13fe,
+        0 0 90px #bc13fe,
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #bc13fe,
+        0 0 45px #bc13fe,
+        0 0 55px #bc13fe,
+        0 0 70px #bc13fe,
+        0 0 80px #bc13fe;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+
+    font-family: 'Nunito', sans-serif;
+
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+h1{
+    color: #fff;
+    font-size: 2.2vw;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.child{
+    width: 50%;
+    float: left;   
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 2.8vw;
+    width: 2.8vw;
+    background-color: #fff;
+    border-radius: 0.977vw;
+    position: relative;
+    transition: 0.4s ease;
+    margin: 10%;
+    margin-left: -0%;
+
+    background: linear-gradient(135deg, #ffffff00, #ffffff00);
+
+    border: 0.2rem solid #fff;
+    border-radius: 0.977;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #b0fa,
+                inset 0 0 1.3rem #b0fa;
+
+}
+
+.main{
+    width: 60vw;
+    height: 40vw;
+    position: relative;
+    margin: 10%;
+    margin-left: -70%;
+
+
+    border: 0.2rem solid #fff;
+    border-radius: 0.977vw;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe; 
+}
+
+.main hr{
+    margin-top: -0.5%;
+}
+
+.header{
+    padding: 1vw;
+    display: flex;
+}
+
+.header i{
+    font-size: 2vw;
+    width: 50%;
+    float: left;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+
+    animation: pulsateTeel 2.5s infinite alternate;
+}
+
+.header h1{
+    width: 50%;
+    float: left;
+    margin: -0.5%;
+    margin-left: -37%;
+
+    font-size: 2.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0px 1000px #558ABB;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+
+    animation: pulsateTeel 2.5s infinite alternate;
+}
+
+.header h2{
+    width: 60%;
+    float: left;
+    font-size: 2.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin: -0.3%;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 22px #bc13fe,
+        0 0 42px #bc13fe;
+
+    animation: pulsateTeel 2.5s infinite alternate;
+}
+
+.contents{
+    display: flex;
+    padding: 3%;
+}
+
+.contents img{
+    width: 18vw;
+    height: 32vw;
+    border-radius: 0.977vw;
+    float: left;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe;
+    
+}
+
+.contents hr{
+    margin-top: 1vw;
+    margin-left: 0.8vw;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+}
+
+.contents h1{
+    width: 100%;
+    float: left;
+    font-size: 4.5vw;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    padding-left: 3%;
+    margin-top: -3%;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 12px #08A4BD,
+        0 0 42px #08A4BD;
+}
+
+.contents h2{
+    width: 100%;
+    float: left;
+    font-size: 3vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding-left: 3%;
+    margin-top: 16%;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #08A4BD,
+    0 0 42px #08A4BD;
+}
+
+.contents h3{
+    width: 100%;
+    float: left;
+    font-size: 3vw;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    padding-left: 3%;
+    margin-top: -2%;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 12px #08A4BD,
+        0 0 42px #08A4BD;
+}
+
+.contents p{
+    width: 100%;
+    float: left;
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 3.5%;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #08A4BD,
+    0 0 42px #08A4BD;
+}
+
+.contents iframe {
+    width: 19vw;
+    height: 10.8vw;
+    border-radius: 2vw;
+    margin-left: 9.4vw;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+}
+
+.embed__music {
+    width: 1011vw;
+    height: 100vw;
+}
+
+.game__button {
+    text-align: center;
+}
+
+.contents button {
+    font-size: 2vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 0.5vw;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #08A4BD,
+    0 0 42px #08A4BD;
+
+    width: 19vw;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 3vw;
+    margin: 0 1vw;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+}
+
+.container.active{
+    height: 17.4vw;
+}
+
+.container.active #hamburger{
+    top: 27%;
+    left: 31%;
+    font-size: 1.3vw;
+}
+
+.toggleBox{
+    position: relative;
+    display: block;
+    height: 2.734vw;
+    width: 2.734vw;
+    border-radius: 1.953vw;
+}
+
+.toggleBox i{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 1vw;
+    position: center;
+
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+}
+
+.toggleBox:hover i{
+    color: #0fa;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #0fa,
+    0 0 42px #0fa;
+}
+
+.navItems{
+    width: 100%;
+    visibility: hidden
+}
+
+.container.active .navItems{
+    visibility: visible;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-transform: uppercase;
+
+    font-weight: 600;
+    
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff;
+}
+
+li a i{
+    position: relative;
+    display: block;
+    font-size: 0.703vw;
+    padding: 0.977vw 0;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+}
+
+li:hover a i::after{
+    width: 0.313vw;
+    transition: 0.3s;
+}
+
+.container.active .navItems li a i{
+    transform: scale(1);
+    transition: 0.4s ease;
+    transition-delay: calc(0.08s * var(--i));
+}
+
+.container.active .navItems li:hover a i{
+    transition: 0.2s ease;
+
+    color: #0fa;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #0fa,
+    0 0 42px #0fa;
+}
+
+li a span{
+    position: absolute;
+    margin: 0.859vw 0;
+    font-weight: 500;
+    font-size: 0.8vw;
+    letter-spacing: 0.078vw;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff;
+}
+
+.container.active .navItems li a span{
+    transform: translateX(0.586vw);
+    transition: 0.4s ease;
+    transition-delay: calc(0.08s * var(--g));
+}
+
+.container.active .navItems li:hover a span{
+    transform: translateX(1.172vw);
+    transition: 0.2s ease;
+
+    color: #0fa;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 12px #0fa,
+    0 0 42px #0fa;
+}
+
+.carousel {
+    position: relative;
+
+}
+
+.carousel__item {
+    height: 100px;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 1vw 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 1vw;
+    height: 1vw;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1vw;
+    margin: 0 0.5vw;
+}
+
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 1);
+    box-shadow:
+    0 0 7px #fff,
+    0 0 22px #bc13fe,
+    0 0 42px #bc13fe;
+}
