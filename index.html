@@ -2,47 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Reagan Webster's Wesbite</title>
+        <title>Reagan Webster's Website</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/a848e2cb99.js" crossorigin="anonymous"></script>
     </head>
     <body>  
-    <!-- hold main site elements -->
+        <!-- Main container for the website -->
         <section class="parent">
-            <!-- Hamburger menu widget -->
+            <!-- Left navigation menu -->
             <section class="child">
-                    <div class="container">
-                        <a href="#" class="toggleBox" onclick="changeIcon(hamburger)">
-                            <i class="fa fa-bars" id="hamburger"></i>
-                        </a>
-                        <ul class="navItems">
-                            <li><a href="#">
+                <div class="container">
+                    <!-- Navigation items, always visible -->
+                    <ul class="navItems">
+                        <li>
+                            <a href="index.html">
                                 <i class="fa fa-home" style="--i:1" onclick="location.href='index.html'"></i>
                                 <span style="--g:1">home</span>
-                            </a></li>
-
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-dice" style="--i:3" onclick="location.href='games.html'"></i>
-                                    <span style="--g:3">games</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-music" style="--i:4" onclick="location.href='music.html'"></i>
-                                    <span style="--g:4">music</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-regular fa-paper-plane" style="--i:5" onclick="location.href='mailto: reagan.e.webster@gmail.com'"></i>
-                                    <span style="--g:5">contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="games.html">
+                                <i class="fa-solid fa-dice" style="--i:3" onclick="location.href='games.html'"></i>
+                                <span style="--g:3">games</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="music.html">
+                                <i class="fa fa-music" style="--i:4" onclick="location.href='music.html'"></i>
+                                <span style="--g:4">music</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <!-- Main page content widget -->
+
+            <!-- Main page content -->
             <section class="child">
                 <div class="main">
                     <div class="header">
@@ -50,28 +44,23 @@
                         <h1 id="headerName">// HOME</h1>
                         <h2>Welcome to my website!</h2>
                     </div>
-                    <hr></hr>
+                    <hr>
                     <div class="contents">
                         <div>
                             <img src="Images\MyImage1.jpg" alt="Cherry Blossom">
                         </div>
                         <div>
                             <h1>Hello There.</h1>
-                            <hr></hr>
-                            <p>I am an honors student who spends my free time channeling my creative energy into my hobbies. Whether it’s designing games, writing music, or making things on my 3d printer, I love blasting my way through an exciting project!</p>
-                            <br></br>
+                            <hr>
+                            <p>I am an honors student who spends my free time channeling my creative energy into my hobbies. Whether it’s designing games, writing music, or making things on my 3D printer, I love blasting my way through an exciting project!</p>
+                            <br>
                             <p>This is my personal website coded in HTML, CSS, and JavaScript.</p>
-                            <br></br>
-                            <p>Click the hamburger icon on the left to activate the navigation menu. I hope you enjoy your stay.</p>
+                            <br>
+                            <p>I hope you enjoy your stay.</p>
                         </div>
                     </div>
-
-
                 </div>
             </section>
         </section>
-
-            <script src="script.js"></script>
-        </div>
     </body>
 </html>

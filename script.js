@@ -1,16 +1,17 @@
-// Hamburger menu
+// Hamburger menu - always open
 var toggleClick = document.querySelector(".toggleBox");
 var container = document.querySelector(".container");
-toggleClick.addEventListener('click', ()=>{
-    toggleClick.classList.toggle('active');
-    container.classList.toggle('active');
-})
 
-// Hamburger menu icon change
+// Ensure the menu is always in the "active" state
+toggleClick.classList.add('active');
+container.classList.add('active');
+
+// Hamburger menu icon change - remove interactivity since it's always active
 let changeIcon = function(icon) {
-    icon.classList.toggle('fa-times')
+    icon.classList.add('fa-times'); // Ensure the icon reflects the "open" state
 }
 
+// Carousel functionality
 document.querySelectorAll(".carousel").forEach((carousel) => {
     const items = carousel.querySelectorAll(".carousel__item");
     const buttonsHtml = Array.from(items, () => {
@@ -21,7 +22,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
         <div class="carousel__nav">
             ${buttonsHtml.join("")}
         </div>
-    `)
+    `);
 
     const buttons = carousel.querySelectorAll(".carousel__button");
 
@@ -42,5 +43,3 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
       items[0].classList.add("carousel__item--selected");
       buttons[0].classList.add("carousel__button--selected");
 });
-
-

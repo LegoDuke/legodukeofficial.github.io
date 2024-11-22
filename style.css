@@ -3,60 +3,6 @@
     font-family: 'Nunito';
 }
 
-@keyframes pulsateTeel {
-    100% {
-      /* Larger blur radius */
-      text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
-    }
-    0% {
-      /* Smaller blur radius */
-      text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff,
-        0 0 6px #fff,
-        0 0 10px #0fa,
-        0 0 45px #0fa,
-        0 0 55px #0fa,
-        0 0 70px #0fa,
-        0 0 80px #0fa;
-    }
-  }
-
-  @keyframes pulsatePurple {
-    100% {
-      /* Larger blur radius */
-      text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
-    }
-    0% {
-      /* Smaller blur radius */
-      text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff,
-        0 0 6px #fff,
-        0 0 10px #bc13fe,
-        0 0 45px #bc13fe,
-        0 0 55px #bc13fe,
-        0 0 70px #bc13fe,
-        0 0 80px #bc13fe;
-    }
-  }
-
 *{
     margin: 0;
     padding: 0;
@@ -97,7 +43,7 @@ h1{
 }
 
 .container{
-    height: 2.8vw;
+    height: 8.4vw;
     width: 2.8vw;
     background-color: #fff;
     border-radius: 0.977vw;
@@ -152,12 +98,16 @@ h1{
     float: left;
 
     color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 22px #bc13fe,
-    0 0 42px #bc13fe;
 
-    animation: pulsateTeel 2.5s infinite alternate;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
 }
 
 .header h1{
@@ -172,12 +122,16 @@ h1{
     text-shadow: 0 0px 1000px #558ABB;
 
     color: #fff;
+    
     text-shadow:
-    0 0 7px #fff,
-    0 0 22px #bc13fe,
-    0 0 42px #bc13fe;
-
-    animation: pulsateTeel 2.5s infinite alternate;
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
 }
 
 .header h2{
@@ -190,11 +144,14 @@ h1{
 
     color: #fff;
     text-shadow:
-        0 0 7px #fff,
-        0 0 22px #bc13fe,
-        0 0 42px #bc13fe;
-
-    animation: pulsateTeel 2.5s infinite alternate;
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
 }
 
 .contents{
@@ -327,11 +284,7 @@ h1{
     0 0 42px #bc13fe;
 }
 
-.container.active{
-    height: 14.4vw;
-}
-
-.container.active #hamburger{
+.container #hamburger{
     top: 27%;
     left: 31%;
     font-size: 1.3vw;
@@ -340,9 +293,6 @@ h1{
 .toggleBox{
     position: relative;
     display: block;
-    height: 2.734vw;
-    width: 2.734vw;
-    border-radius: 1.953vw;
 }
 
 .toggleBox i{
@@ -372,7 +322,7 @@ h1{
     visibility: hidden
 }
 
-.container.active .navItems{
+.container .navItems{
     visibility: visible;
 }
 
@@ -406,13 +356,13 @@ li:hover a i::after{
     transition: 0.3s;
 }
 
-.container.active .navItems li a i{
+.container .navItems li a i{
     transform: scale(1);
     transition: 0.4s ease;
     transition-delay: calc(0.08s * var(--i));
 }
 
-.container.active .navItems li:hover a i{
+.container .navItems li:hover a i{
     transition: 0.2s ease;
 
     color: #0fa;
@@ -435,13 +385,13 @@ li a span{
         0 0 10px #fff;
 }
 
-.container.active .navItems li a span{
+.container .navItems li a span{
     transform: translateX(0.586vw);
     transition: 0.4s ease;
     transition-delay: calc(0.08s * var(--g));
 }
 
-.container.active .navItems li:hover a span{
+.container .navItems li:hover a span{
     transform: translateX(1.172vw);
     transition: 0.2s ease;
 
